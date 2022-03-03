@@ -31,7 +31,7 @@ namespace lab2visual
             }
         }
         //Сложение римских чисел
-         public static RomanNumber Add(RomanNumber? n1, RomanNumber? n2)
+         public static RomanNumber operator +(RomanNumber? n1, RomanNumber? n2)
          {
             ushort r;
             r = (ushort)(n1.dec + n2.dec);
@@ -43,7 +43,7 @@ namespace lab2visual
             
          }
         //Вычитание римских чисел
-        public static RomanNumber Sub(RomanNumber? n1, RomanNumber? n2)
+        public static RomanNumber operator -(RomanNumber? n1, RomanNumber? n2)
         {
             if ((short)((short)n1.dec - (short)n2.dec) <= 0) throw new RomanNumberException("Result is less than zero");
             else {
@@ -52,7 +52,7 @@ namespace lab2visual
             }
         }
         //Умножение римских чисел
-        public static RomanNumber Mul(RomanNumber? n1, RomanNumber? n2)
+        public static RomanNumber operator *(RomanNumber? n1, RomanNumber? n2)
         {
             if (n1.dec * n2.dec > 3999) throw new RomanNumberException("Result is more than 3999");
             else {
@@ -61,7 +61,7 @@ namespace lab2visual
             }
         }
         //Целочисленное деление римских чисел
-        public static RomanNumber Div(RomanNumber? n1, RomanNumber? n2)
+        public static RomanNumber operator /(RomanNumber? n1, RomanNumber? n2)
         {
             if (n1.dec / n2.dec <=0) throw new RomanNumberException("Result is less than 0");
             else
