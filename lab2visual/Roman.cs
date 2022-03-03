@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab2visual
 {
-    internal class RomanNumber : ICloneable, IComparable
+    public class RomanNumber : ICloneable, IComparable
     {
         private ushort dec;
         private short[] values = new short[] { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
@@ -90,7 +90,7 @@ namespace lab2visual
 
         public object Clone()
         {
-            return new RomanNumber(dec);
+            return MemberwiseClone();
         }
 
         public int CompareTo(object? o)

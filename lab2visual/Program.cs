@@ -13,7 +13,7 @@ namespace lab2visual
             Console.WriteLine("437 + 2 = " + (n1 + n2));
             Console.WriteLine("437 - 2 = " + (n1 - n2));
             Console.WriteLine("437 * 2 = " + (n1 * n2));
-            Console.WriteLine("437 / 2 = " + (n1 / n2));
+            Console.WriteLine("437 / 2 = " + (n1 / n2)); 
             
             short[] Values = new short[]
             { 9, 6, 5, 4, 3, 2, 1 };

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab2visual
 {
-    class RomanNumberException : Exception
+    public class RomanNumberException : Exception
     {
         public RomanNumberException(string message) : base(message)
         {
